@@ -7,9 +7,31 @@ It issues invoices, applies Indian GST, records payments, and reports
 outstanding amounts. There is no database and no web server — everything runs
 from sample data in memory.
 
+## Before the session
+
+Nothing here is required. The session is follow-along — the facilitator drives
+on the main screen and you are welcome to simply watch. Everyone gets this
+repo, and it works just as well at 11pm on your own machine.
+
+If you do want to follow along on a laptop:
+
+1. Python 3.10 or newer. Check with `python --version` (or `python3`, or `py`).
+2. Claude Code installed and signed in — https://claude.com/claude-code
+   Do this the night before, not in the hall. First-time sign-in needs network.
+3. Clone this repo and confirm it runs:
+
+   ```bash
+   git clone https://github.com/AIGuruOne/aiguru-billing-workshop
+   cd aiguru-billing-workshop
+   python check.py      # expect: 15 passed, 1 failed
+   ```
+
+That one failure is on purpose. Finding and fixing it is the first exercise.
+
 ## Getting started
 
-You need Python 3.10 or newer. Nothing else. There is nothing to install.
+You need Python 3.10 or newer. The billing engine itself needs nothing
+installed.
 
 ```bash
 python run_demo.py        # print the sample invoices
