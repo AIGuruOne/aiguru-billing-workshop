@@ -50,5 +50,5 @@ def compute_invoice(invoice: Invoice) -> dict:
         "igst": to_paise(igst),
         "total_tax": to_paise(total_tax),
         "round_off": to_paise(rounded - before_rounding),
-        "grand_total": before_rounding,
+        "grand_total": rounded,
     }
